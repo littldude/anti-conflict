@@ -1,0 +1,417 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'ProximaNova';
+    font-weight: 400;
+    background-color: #E4DBFF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #12272D;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 100%;
+}
+
+.header {
+    background-color: #ffffff;
+    &__inner {
+        padding: 30px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: block;
+        width: 180px;
+        height: 37px;
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+        margin-right: 65px;
+        &--img {
+            display: block;
+            width: 30px;
+            height: 30px;
+            svg {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &--item {
+            display: flex;
+            flex-direction: column;
+            margin-left: 13px;
+            &__number {
+                display: block;
+                color: #12272D;
+            }
+            span {
+                display: block;
+                color: #12272D;
+            }
+        }
+    }
+}
+
+.button {
+    display: block; 
+    padding: 35px 0;
+    width: 380px;
+    height: 103px;
+    font-family: 'ProximaNova';
+    border-radius: 30px;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    &__intro {
+        background-color: #9271EE;
+        box-shadow: 5px 5px 10px rgba(146, 113, 238, 0.3);
+        &:hover {
+            background: #825CEC;
+            box-shadow: 5px 5px 10px rgba(146, 113, 238, 0.3);
+            transition: .2s linear;
+        }
+    }
+    &__yellow {
+        margin: 0 auto;
+        background: #FFBE17;
+        box-shadow: 5px 5px 10px rgba(255, 190, 23, 0.3);
+        &:hover {
+            transition: .2s linear;
+            background: #FFB904;
+            box-shadow: 5px 5px 10px rgba(255, 190, 23, 0.3);
+        }
+    }
+}
+.text {
+    font-family: 'ProximaNova';
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    &__program {
+        color: #ffffff;
+    }
+}
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 60px;
+    text-align: center;
+    &__intro {
+        text-align: left;
+    }
+    &__buy {
+        padding: 0 9%;
+        margin-bottom: 66px;
+    }
+}
+.intro {
+    background-color: #ffffff;
+    background-image: url('../img/bg-intro.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 70%;
+    border-radius: 0px 0px 160px 0px;
+    &__inner {
+        position: relative;
+        padding: 120px 0 82px 0;
+    }
+    &__subtitle {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__text {
+        width: 490px;
+        margin-top: 25px;
+        margin-bottom: 65px;
+    }
+    &__about {
+        display: flex;
+        &--item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &__img {
+                display: block;
+                margin-right: 12px;
+                width: 50px;
+                height: 50px;
+                svg {
+                    display: block;
+                    width: 50px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: -30px;
+    }
+}
+
+.about {
+    padding: 90px 0 280px 0;
+    background-color: #E4DBFF;
+    background-image: url("../img/bg-clouds.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    &__inner {
+        background-image: url("../img/clouds.png");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    &__block {
+        margin-top: 52px;
+        margin-left: 50%;
+        display: flex;
+        flex-direction: column;
+        &--item {
+            display: flex;
+            margin-bottom: 40px;
+            &::before {
+                display: block;
+                content: url('../check.svg');
+                width: 19px;
+                height: 17px;
+                margin-right: 35px;
+            }
+        }
+    }
+}
+.program {
+    padding: 60px 0 120px 0;
+    background-color: #ffffff;
+    background-image: url("../img/кружочки\(1\).png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 63px;
+    &__inner {
+        position: relative;
+        padding: 60px 0 80px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &--item {
+            display: block;
+            padding: 80px 50px 0 50px;
+            width: 380px;
+            height: 300px;
+            background: #FFFFFF;
+            border: 1px solid #9271EE;
+            text-align: center;
+            margin-bottom: 25px;
+            &:first-child {
+                background: #9271EE;
+                border-radius: 120px 0 0 0;
+            }
+            &:last-child {
+                background: #9271EE;
+                border-radius: 0 0 120px 0;
+            }
+            &:hover {
+                transform: scale(1.05);
+                transition: .2s linear;
+                cursor: pointer;
+            }
+        }
+    }
+    &__img {
+        position: absolute;
+        top: -40px;
+    }
+}
+.results {
+    padding: 75px 0 87px 0;
+    background-color: #eaab28;
+    background-image: url("../img/bg-results.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: inherit;
+    &__inner {
+        display: block;
+        padding: 50px 55px 50px 30px;
+        margin-top: 50px;
+        width: 700px;
+        background: #FFFFFF;
+    }
+    &__text {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.autor {
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    padding: 90px 0 60px 0;
+    z-index: 5;
+    background-image: url("../img/кружочки\(2\).png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    border-radius: 0px 0px 0px 160px;
+    &__inner {
+        display: block;
+        margin-top: 60px;
+        margin-left: 8%;
+        width: 580px;
+        padding: 45px 54px 65px 53px;
+        background-color: #ffffff;
+        border: 1px solid #FFBE17;
+    }
+    &__img {
+        position: absolute;
+        right: 21%;
+        bottom: 0;
+        display: block;
+        width: 472px;
+        height: 641px;
+    }
+}
+.buy {
+    padding: 90px 0 90px 0;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        &--price {
+            &__last {
+                position: relative;
+                margin: 45px 0;
+                display: block;
+                font-family: 'ProximaNova';
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 61px;
+                text-align: center;
+                color: #000000;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translateX(50%);
+                    width: 25%;
+                    height: 5px;
+                    background-color: #fbb205;
+                }
+            }
+            &__new {
+                display: block;
+                margin-bottom: 80px;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 100px;
+                line-height: 115px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+        span {
+            display: block;
+            width: 597px;
+            margin: 70px auto 0 auto;
+            font-family: 'ProximaNova';
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 60px 0 90px 0;
+    &__inner {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--text {
+            font-family: 'ProximaNova';
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #000000;
+        }
+        &--email {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #FAC36A;
+            text-decoration: underline;
+            &:hover {
+                color: #FFB641;
+                transition: .2s linear;
+            }
+        }
+    }
+    &__link {
+        margin: 60px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 550px;
+        &--item {
+            display: block;
+            width: 65px;
+            height: 65px;
+            fill: #FAC36A;
+            &:hover {
+                fill: #FFB904;
+                transition: .2s linear;
+            }
+            svg {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/*FONTS*/
+@font-face {
+    font-family: 'ProximaNova'; 
+    src: url('../fonts/ProximaNova-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ProximaNova'; 
+    src: url('../fonts/ProximaNova-Bold.ttf');
+    font-weight: 700;
+}
