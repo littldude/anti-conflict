@@ -88,7 +88,6 @@
     <section class="intro">
         <div class="container">
             <div class="intro__inner">
-                <!-- <img class="intro__img" src="img/кружочки.png" alt="Art"> -->
                 <div class="intro__text">
                     <p class="intro__subtitle text">Курс Вадима Куркина</p>
                     <!-- /.subtitle -->
@@ -321,7 +320,7 @@
 
 <script>
     $.getJSON("https://vadimkurkin.com/prices.json", function(data) {
-              $('#price').html(data['anti-conflict'] + 'руб.')
+              $('#price').html(data['anti-conflict'] + ' ' + 'руб.')
     });
       
 </script>
