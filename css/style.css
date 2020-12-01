@@ -171,7 +171,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 20.5%;
+  width: 21%;
 }
 .intro__about--item__img {
   display: block;
@@ -347,11 +347,11 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 50%;
   transform: translateX(50%);
-  width: 300px;
-  height: 5px;
+  width: 290px;
+  height: 3px;
   background-color: #fbb205;
 }
 .buy__inner--price__new {
@@ -763,7 +763,7 @@ a {
   }
   .buy__inner--price__last::before {
     width: 52%;
-    height: 3px;
+    height: 2px;
   }
   .buy__inner--price__new {
     font-size: 60px;
