@@ -232,6 +232,8 @@ a {
         &--item {
             display: block;
             margin: 0 auto;
+            width: 850px;
+            height: 520px;
         }
     }
 }
@@ -471,7 +473,7 @@ a {
         &__img {
             width: auto;
             height: 550px;
-            right: 6%;
+            right: 0;
         }
     }
 }
@@ -789,9 +791,9 @@ a {
     .program {
         &__inner {
             &--item {
-                padding: 43px 40px 50px 40px;
+                padding: 10px 20px;
                 width: 290px;
-                height: 188px;
+                height: auto;
             }
         }
     }

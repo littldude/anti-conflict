@@ -238,6 +238,8 @@ a {
 .video__inner--item {
   display: block;
   margin: 0 auto;
+  width: 850px;
+  height: 520px;
 }
 
 .program {
@@ -478,7 +480,7 @@ a {
   .autor__img {
     width: auto;
     height: 550px;
-    right: 6%;
+    right: 0;
   }
 }
 @media (max-width: 991px) {
@@ -752,9 +754,9 @@ a {
   }
 
   .program__inner--item {
-    padding: 43px 40px 50px 40px;
+    padding: 10px 20px;
     width: 290px;
-    height: 188px;
+    height: auto;
   }
 
   .results__inner {
